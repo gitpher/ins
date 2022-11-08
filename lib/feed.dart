@@ -7,7 +7,12 @@ import 'package:flutter/material.dart';
 class Feed extends StatefulWidget {
   const Feed({
     Key? key,
+    // 파라미터로 이미지URL을 받기
+    required this.imgUrl,
   }) : super(key: key);
+
+  // 이미지를 담을 변수
+  final String imgUrl;
 
   @override
   State<Feed> createState() => _FeedState();
@@ -24,7 +29,7 @@ class _FeedState extends State<Feed> {
       children: [
         // 이미지
         Image.network(
-          "https://media.bunjang.co.kr/product/200602626_1_1664367537_w360.jpg",
+          widget.imgUrl,
           height: 400,
           width: double.infinity,
           fit: BoxFit.cover,
