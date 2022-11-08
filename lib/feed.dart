@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// 배운점
+// ListView.builder()
+
 class Feed extends StatefulWidget {
   const Feed({
     Key? key,
