@@ -42,6 +42,8 @@ class HomePage extends StatelessWidget {
           'assets/logo.png',
           height: 32,
         ),
+        centerTitle: true,
+        backgroundColor: Colors.white,
       ),
       body: Center(child: Text('Hello Homepage')),
     );
